@@ -1,19 +1,20 @@
-# MNIST CNN From Scratch
+# Handwritten Digit Recognition using CNN (Python)
 
-A simple Convolutional Neural Network (CNN) implemented in **Python** to classify handwritten digits (0–9) using the MNIST-style dataset (28×28 grayscale images).
+This project implements a Convolutional Neural Network (CNN) using **Python and TensorFlow/Keras** to classify handwritten digits (0–9) from 28×28 grayscale images.
 
-This project demonstrates the complete pipeline of building, training, and evaluating a CNN for image classification.
+It also includes an **interactive drawing canvas** where users can draw a digit with the mouse and the model predicts the number in real time.
 
 ---
 
 ## 📌 Features
 
-- CNN built from scratch using Python
-- Trained on 28×28 grayscale handwritten digit dataset
+- CNN built using TensorFlow / Keras
+- Trained on MNIST-style 28×28 grayscale digit dataset
 - Multi-class classification (digits 0–9)
-- Forward propagation and backpropagation implemented
-- Softmax + Cross Entropy loss
-- Achieves high accuracy on digit recognition
+- Training accuracy and loss visualization
+- Save and load trained model
+- 🎨 Draw a digit with mouse and predict instantly
+- Beginner-friendly and modular code
 
 ---
 
