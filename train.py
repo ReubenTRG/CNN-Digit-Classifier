@@ -10,14 +10,15 @@ from dataset_loader import load_data
 
 def plot_training_history(history):
     """
-    Plot training accuracy and loss over epochs
+    Plot training accuracy and loss over epochs vertically
     
     Args:
         history: Keras training history object
     """
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 4))
+    # Change from (1, 2) to (2, 1)
+    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(8, 10))
     
-    # Plot accuracy
+    # Plot accuracy (TOP)
     ax1.plot(history.history['accuracy'], label='Training Accuracy', marker='o')
     ax1.plot(history.history['val_accuracy'], label='Validation Accuracy', marker='s')
     ax1.set_title('Model Accuracy Over Epochs')
@@ -26,7 +27,7 @@ def plot_training_history(history):
     ax1.legend()
     ax1.grid(True, alpha=0.3)
     
-    # Plot loss
+    # Plot loss (BOTTOM)
     ax2.plot(history.history['loss'], label='Training Loss', marker='o')
     ax2.plot(history.history['val_loss'], label='Validation Loss', marker='s')
     ax2.set_title('Model Loss Over Epochs')
